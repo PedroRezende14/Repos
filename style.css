@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#light {
+    position: fixed;
+    width: 800px;
+    height: 800px;
+    border-radius: 40%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.034) 0%, rgba(206, 6, 6, 0) 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    line-height: 1.6;
+    color: #fff;
+    background-color: #101010;
+}
+
+.background {
+    background-color: #101010;
+    background-size: cover;
+    background-position: center;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    cursor: pointer;
+    letter-spacing: 2.5px;
+}
+
+span {
+    color: #008b23;
+    transition: color 0.3s ease;
+}
+
+span:hover {
+    color: #02b820;
+}
+
+.cabecalio-link {
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover {
+    color: #008b23;
+}
+
+.info-primaria {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.info-primaria h4 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-primaria h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.info-primaria h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.btn-sobremim {
+    display: inline-block;
+    background-color: #008b23;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-sobremim:hover {
+    background-color: transparent;
+    border: 2px solid #008b23;
+}
+
+.backsobre, .Habilidades, .port {
+    padding: 5rem 2rem;
+}
+
+.main-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.main-sobre img {
+    max-width: 100%;
+    height: auto;
+}
+
+.txt-sobre {
+    max-width: 550px;
+}
+
+.txt-sobre h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.txt-sobre h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.meu-portfolio h2 {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.minhas-habilidade h2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 15px;
+}
+
+.caixa {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card {
+    background: #191919;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+.card i {
+    font-size: 3rem;
+    color: #008b23;
+    margin-bottom: 1rem;
+}
+
+.card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.icones i {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+}
+
+.button-port {
+    display: inline-block;
+    background-color: #008b23;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.button-port:hover {
+    background-color: transparent;
+    border: 2px solid #008b23;
+}
+
+footer {
+    background-color: #101010;
+    text-align: center;
+    padding: 3rem 1rem;
+}
+
+footer h6 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.Redes-sociais a {
+    background-color: #02b820;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.Redes-sociais a:hover {
+    transform: scale(1.2);
+}
+
+.end {
+    font-size: 0.875rem;
+    color: #02b820;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.experiencia {
+    background-color: #101010;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.experiencia h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #02b820;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 5px auto;
+    padding: 20px 0;
+    text-align: left;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+
+.timeline-item:before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #02b820; 
+}
+
+.timeline-date {
+    position: flex;
+    left: 0;
+    top: 10;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #02b820; 
+    
+}
+
+.timeline-content h3 {
+    font-size: 1.5em;
+    color: #02b820; 
+    margin-bottom: 5px;
+}
+
+.timeline-content h4 {
+    font-size: 1.2em;
+    color: #fff; 
+    margin-bottom: 10px;
+}
+
+.timeline-content p {
+    font-size: 1em;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.timeline-item:before {
+    content: none;
+}
+
+.timeline-content {
+    background-color: transparent;
+    padding: 10px 15px;
+    border-left: none; 
+}
+
+
+@media screen and (max-width: 768px) {
+    .timeline-item {
+        padding-left: 30px;
+    }
+
+    .timeline-item:before {
+        left: 15px;
+    }
+
+    .timeline-item:after {
+        left: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experiencia h2 {
+        font-size: 2em;
+    }
+
+    .timeline-content h3 {
+        font-size: 1.3em;
+    }
+
+    .timeline-content h4 {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cabecalio-link {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .info-primaria h1 {
+        font-size: 2.5rem;
+    }
+
+    .main-sobre {
+        flex-direction: column;
+    }
+
+    .txt-sobre {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .background {
+        padding: 1rem;
+    }
+
+    .info-primaria h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+}

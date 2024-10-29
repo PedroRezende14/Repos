@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Pedro Rezende</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="light"></div>
+
+    <script>
+        const light = document.getElementById('light');
+        
+        document.addEventListener('mousemove', (e) => {
+            light.style.left = e.clientX + 'px';
+            light.style.top = e.clientY + 'px';
+        });
+    </script>
+
+
+    <header class="background">
+        <nav>
+            <div class="logo">
+                <h2>Meu <span>Portfólio</span></h2> 
+            </div>
+            <ul class="cabecalio-link">
+                <li><a href="#Sobre">Sobre Mim</a></li>
+                <li><a href="#H">Habilidades</a></li>
+                <li><a href="#experiencia">Experiência</a></li>
+                <li><a href="#port">Projetos</a></li>
+                <li><a href="#Cont">Contato</a></li>
+               
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="info-primaria"> 
+            <h4>Olá, sou o</h4>
+            <h1>Pedro <span>Rezende</span></h1>
+            <h3>Desenvolvedor Web!</h3>
+            <a href="https://drive.google.com/file/d/1hD2z8ECZp11eHfb7U0zsH3gMQC0wC9jX/view?usp=drive_link" class="btn-sobremim">Currículo</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="Sobre" class="backsobre">
+            <div class="main-sobre">
+                <img src="img/eu2.png" alt="Pedro Rezende"> 
+                <div class="txt-sobre">
+                    <h2>Sobre <span>mim</span></h2>
+                    <h4>Desenvolvedor Web</h4>
+                    <p>Busco meu primeiro emprego como estagiário na área da tecnologia. Tenho experiências com trabalho em equipe, sou um bom líder, lido bem sob pressão e busco aprimorar meus conhecimentos a cada dia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="H" class="Habilidades">
+            <div class="minhas-habilidade">
+                <h2>Habilidades</h2>
+                <div class="caixa">
+                    <div class="card">
+                        <i class="fa fa-bars"></i>
+                        <h5>Desenvolvedor</h5>
+                        <p>Sou um dev iniciante, tenho conhecimento nas Linguagens: Html, CSS, SQL, C++, PHP e C#. Tenho uma boa lógica de programação e habilidades para trabalhar em equipe.</p>
+                    </div>
+                
+                    <div class="card">
+                        <i class="fa fa-user"></i>
+                        <h5>Qualidades</h5>
+                        <p>Comunicação, Foco em resultados, Liderança, Autonomia, Inteligência emocional, Flexibilidade, Criatividade, Aprendizado contínuo, Pensamento crítico, Resiliência profissional, Colaboração e trabalho em equipe, Capacidade de trabalho remoto, Comprometimento, Capacidade de inovação.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="experiencia">
+            <h2>Experiência Profissional</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - atual <br></div>
+                    <div class="timeline-content">
+                        <h3>Estagiario de T.I</h3>
+                        <h4>Magazord</h4>
+                        <p>Manutenção em computadores, configuração de dominio, redes, suporte tecnico, segurança, segurança web e interna e Segurança da Informação. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    
+        <section id="port" class="port">
+            <div class="meu-portfolio">
+                <h2><span>Portfólio</span></h2>
+                <div class="caixa">
+                    <div class="card">
+                        <i class="fa fa-window-restore"></i>
+                        <h5>TCC - Etec</h5>
+                        <p>A SAME é um projeto que foi criado com o propósito de auxiliar os microempresários que não possuem tanta disponibilidade financeira a possuírem uma maior seguridade na maior parte do tempo em seu estabelecimento com um baixo custo.</p>
+                        <a href="https://SAME-1.pedroluizzz.repl.co" class="button-port">Link do Projeto</a>
+                    </div>
+                
+                    <div class="card">
+                        <i class="fab fa-github"></i>
+                        <h5>GitHub</h5>
+                        <p>Meu GitHub com vários projetos pessoais e projetos de faculdade</p>
+                        <a href="https://github.com/PedroRezende14" class="button-port">Link do Projeto</a>
+                    </div>
+        
+                    <div class="card">
+                        <i class="fas fa-dna"></i>
+                        <h5>Framework-Genetica</h5>
+                        <p>Framework que permite a análise de arquivos fasta</p>
+                        <a href="https://github.com/PedroRezende14" class="button-port">Link do Projeto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="Cont">
+        <h6>PEDRO REZENDE</h6>
+        <p>Redes Sociais</p>
+        <div class="Redes-sociais">
+            <a href="https://www.linkedin.com/in/pedro-luiz-gon%C3%A7alves-rezende-658034208/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://wa.me/5511952424321?text=Pedro+Rezende"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="end">Copyright © 2024 - Todos os direitos reservados - Pedro Rezende</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
