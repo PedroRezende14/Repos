@@ -331,6 +331,124 @@ footer h6 {
 }
 
 
+.certificados {
+    background-color: #101010;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.certificados h2{
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #02b820;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    width: 600px;
+}
+
+.modal img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.certificados .gallery img {
+    max-width: 500px; 
+    height: auto; 
+    border-radius: 10px; 
+    margin: 10px; 
+    transition: transform 0.3s;
+}
+
+.certificados .gallery img:hover {
+    transform: scale(1.1)}
+
+
+    .certificados .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 20px; 
+    }
+    
+    .gallery-item {
+        flex: 1 1 calc(33.333% - 20px); 
+        max-width: calc(33.333% - 20px); 
+        box-sizing: border-box; 
+        text-align: center;
+    }
+    
+    .gallery-item img {
+        width: 300px; 
+        height: 200px; 
+        object-fit: cover; 
+        border-radius: 10px; 
+        transition: transform 0.3s;
+        margin: 10px; 
+    }
+    
+    .gallery-item img:hover {
+        transform: scale(1.1); 
+        color: #000;
+    }
+
+    .certificados .gallery-item {
+        position: relative; /* Para posicionar o texto sobre a imagem */
+        cursor: pointer;
+    }
+    
+    .gallery-item .hover-text {
+        display: none; /* Esconde o texto inicialmente */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 90%;
+        width: 250px;
+        z-index: 10;
+        font-size: 0.9em;
+    }
+    
+    .gallery-item:hover .hover-text {
+        display: block; /* Exibe o texto ao passar o mouse */
+    }
+    
+    .gallery-item img {
+        transition: transform 0.3s, filter 0.3s;
+    }
+    
+    .gallery-item:hover img {
+        transform: scale(1.1);
+        filter: brightness(0.6); /* Escurece a imagem para destacar o texto */
+    }
+    
 @media screen and (max-width: 768px) {
     .timeline-item {
         padding-left: 30px;

@@ -10,4 +10,18 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
+function openModal(imageId, text) {
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modal-img');
+    const modalText = document.getElementById('modal-text');
 
+    modalImg.src = imageId + '.png';
+    modalText.textContent = text;
+
+    modal.style.display = 'flex';
+}
+
+function closeModal() {
+    const modal = document.getElementById('modal');
+    modal.style.display = 'none';
+}
