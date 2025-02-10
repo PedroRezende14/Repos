@@ -153,10 +153,16 @@ nav ul a:hover {
 
 .minhas-habilidade h2 {
     display: flex;
+    font-size: 2.5em;
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
     padding: 15px;
+    color: #008b23;
+}
+.minhas-habilidade p {
+    padding: 15px;
+    margin: 15 px;
 }
 
 .caixa {
@@ -415,18 +421,18 @@ footer h6 {
     }
 
     .certificados .gallery-item {
-        position: relative; /* Para posicionar o texto sobre a imagem */
+        position: relative;
         cursor: pointer;
     }
     
     .gallery-item .hover-text {
-        display: none; /* Esconde o texto inicialmente */
+        display: none; 
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: #fff;
-        background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente */
+        background-color: rgba(0, 0, 0, 0.8); 
         padding: 10px;
         border-radius: 10px;
         text-align: center;
@@ -437,7 +443,7 @@ footer h6 {
     }
     
     .gallery-item:hover .hover-text {
-        display: block; /* Exibe o texto ao passar o mouse */
+        display: block; 
     }
     
     .gallery-item img {
@@ -446,8 +452,31 @@ footer h6 {
     
     .gallery-item:hover img {
         transform: scale(1.1);
-        filter: brightness(0.6); /* Escurece a imagem para destacar o texto */
+        filter: brightness(0.6); 
     }
+
+    .skills-list {
+        list-style: none;
+        padding: 0;
+    }
+    .skills-list li {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .skills-list i {
+        font-size: 1.5rem;
+        margin-right: 10px;
+        color: #008b23;
+    }
+    .stars {
+        margin-left: auto;
+        color: gold;
+        font-size: 1.2rem;
+    }
+
+
     
 @media screen and (max-width: 768px) {
     .timeline-item {
