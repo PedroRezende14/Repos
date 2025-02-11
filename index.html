@@ -14,6 +14,10 @@
 </head>
 <body>
 
+    <div class ="preloader" id="preloader">
+        <div class="loader" id= "loader"></div>
+    </div>
+
     <div id="light"></div>
 
     <script>
@@ -55,7 +59,7 @@
     <main>
         <section id="Sobre" class="backsobre">
             <div class="main-sobre">
-                <img src="img/eu2.png" alt="Pedro Rezende"> 
+                <img src="img/foto capa.png" alt="Pedro Rezende"> 
                 <div class="txt-sobre">
                     <h2>Sobre <span>mim</span></h2>
                     <p>Sou formado em técnico em desenvolvimento de sistemas pela ETEC, 🎓​ e atualmente estou cursando Bacharelado em ciência da computação no IFC. 💻
@@ -71,7 +75,7 @@
                 <div class="caixa">
                     <div class="card">
                         <i class="fa fa-code"></i>
-                        <h5>Skills</h5>
+                        <h5>Hard Skills</h5>
                         <p>Sou um dev iniciante, e tenho os seguintes conhecimento nessas Linguagens e um tendo um aprendizado continuo</p>
                         <ul class="skills-list">
                             <li><i class="fab fa-html5"></i> HTML <span class="stars">★★★</span></li>
@@ -86,26 +90,45 @@
                             <li><i class="fa-brands fa-docker"></i> Docker <span class="stars">★★</span></li>
                         </ul>
                     </div>
-                </div>
-            </div>
-        </section>
 
+
+                    <div class="card">
+                        <i class="fas fa-user-check"></i>
+                        <h5>Soft Skills</h5>
+                        <p>Graças à minha experiência em projetos acadêmicos e ao trabalho diário, desenvolvi as seguintes soft skills</p>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-brain"></i>Aprendizado Rápido <span class="stars">★★★★</span></li>
+                            <li><i class="fas fa-lightbulb"></i>Proatividade <span class="stars">★★★★</span></li>
+                            <li><i class="fas fa-users"></i>Trabalho em Equipe  <span class="stars"> ★★★★</span></li>
+                            <li><i class="fas fa-sync-alt"></i>Adaptabilidade <span class="stars">★★★★★</span></li>
+                            <li><i class="fas fa-comments"></i>Comunicação Assertiva <span class="stars">★★★★</span></li>
+                            <li><i class="fas fa-handshake"></i>Compromisso com o Trabalho <span class="stars">★★★★★</span></li>
+                        </ul>
+                    </div>
+                </div>
         <!-- Formato das estrelas 
         ★
         ★★
         ★★★ 
         ★★★★
         ★★★★★  -->
+         </section>
 
         <section id="experiencia" class="experiencia">
             <h2>Experiência Profissional</h2>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-date">2023 - atual <br></div>
+                    <div class="timeline-date">2023/06 - atual <br></div>
                     <div class="timeline-content">
                         <h3>Estagiario de T.I</h3>
                         <h4>Magazord</h4>
-                        <p>Manutenção em computadores, configuração de dominio, redes, suporte tecnico, segurança, segurança web e interna e Segurança da Informação. </p>
+                        <p>Manutenção em computadores, configuração de dominio, redes, suporte tecnico, segurança, segurança web e interna e Segurança da Informação. <br>
+                           <br> Administração de Sistemas Linux: Instalação, configuração e gerenciamento de servidores e ambientes Linux.<br>
+                            Gerenciamento de Redes: Configuração e manutenção de redes locais e VPNs.<br>
+                            Suporte Técnico: Diagnóstico e solução de problemas em hardware e software.<br>
+                            Segurança da Informação: Implementação de políticas de segurança e análise de vulnerabilidades.<br>
+                            Virtualização e Containers: Experiência com Docker.<br>
+                            Automação de Tarefas: Uso de scripts Bash e ferramentas para otimizar processos.</p>
                     </div>
                 </div>
             </div>
@@ -242,5 +265,7 @@
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script_preloader.js"></script>
+
 </body>
 </html>
